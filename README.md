@@ -50,7 +50,7 @@ Users should be able to:
 ### Links
 
 - Repository URL: [https://github.com/tomwinskell/react-tube](https://github.com/tomwinskell/react-tube)
-- Live Site URL: [https://react-tube-21k3iull2-tom-winskells-projects.vercel.app/](https://react-tube-21k3iull2-tom-winskells-projects.vercel.app/)
+- Live Site URL: [https://react-tube-ten.vercel.app/](https://react-tube-ten.vercel.app/)
 
 ## My process
 
