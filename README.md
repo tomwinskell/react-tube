@@ -1,6 +1,22 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Table of contents
+
+- [Overview](#overview)
+  - [Running the project](#running-the-project)
+  - [The app](#the-app)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+## Running the project
 
 First, run the development server:
 
@@ -16,21 +32,58 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### The app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Users should be able to:
 
-## Learn More
+- See placeholders when the site loads
+- View the site on different devices
+- Use the search bar to enter a query and find a video
+- Click a video from the list and load that video
 
-To learn more about Next.js, take a look at the following resources:
+### Screenshot
+
+<img src="./public/react-tube desktop.jpeg" alt="Screenshot 1" height="400"/>
+<img src="./public/react-tube mobile.jpeg" alt="Screenshot 2" height="400"/>
+<img src="./public/react-tube tablet.jpeg" alt="Screenshot 2" height="400"/>
+
+### Links
+
+- Repository URL: [https://github.com/tomwinskell/react-tube](https://github.com/tomwinskell/react-tube)
+- Live Site URL: [https://react-tube-21k3iull2-tom-winskells-projects.vercel.app/](https://react-tube-21k3iull2-tom-winskells-projects.vercel.app/)
+
+## My process
+
+### Key Features and Implementation Details
+
+- Uses Axios to fetch Google YouTube API data
+- Data stored using useState
+- UI updates using React and useState
+- useDebounce used to only fetch 1s after user finishes typing, to prevent multiple submissions to fetch
+- Tailwind CSS used for responsive styling
+
+### Built with
+
+- Next.js
+- React
+- Axios
+- useDebounce
+- Tailwind CSS
+
+## What I learned
+
+### Useful resources
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [use-debounce](https://github.com/niklasvh/use-debounce) - A simple React hook for debouncing values.
+- [use-debounce Documentation](https://www.npmjs.com/package/use-debounce) - Official documentation for usage and examples.
+- [Axios Documentation](https://axios-http.com/docs/intro) - Learn about Axios for making HTTP requests.
+- [React Documentation](https://reactjs.org/docs/getting-started.html) - Official React documentation for getting started and API reference.
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - Official documentation for Tailwind CSS.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [LinkedIn](https://www.linkedin.com/in/tomwinskell) - Professional network and career connections.
+- [Notion](https://tomwinskell.notion.site) - Personal workspace and knowledge management.
+- [GitHub](https://github.com/tomwinskell) - Check out my projects and code repositories.

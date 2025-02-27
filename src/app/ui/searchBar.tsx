@@ -9,7 +9,7 @@ type SearchBarProps = {
 export default function SearchBar({ onTermChange }: SearchBarProps) {
   const [term, setTerm] = useState('');
 
-  const debounced = useDebouncedCallback((value) => onTermChange(value), 500);
+  const debounced = useDebouncedCallback((value) => onTermChange(value), 1000);
 
   return (
     <div>
