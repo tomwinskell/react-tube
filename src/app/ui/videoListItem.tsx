@@ -9,9 +9,9 @@ export default function VideoListItem({
   video: { title, thumbnail },
 }: VideoListItemProps) {
   return (
-    <div>
-      <h2>{title}</h2>
-      <Image
+    <div className='max-w-md sm:max-w-xs md:max-w-max flex flex-col justify-end p-2'>
+      <h2 className='w-full'>{title}</h2>
+      <Image className='mb-3 mx-auto'
         src={thumbnail.url}
         alt={title}
         width={thumbnail.width}

@@ -13,5 +13,5 @@ type Thumbnail = {
 
 export interface VideoFromApi {
   id: { videoId: string };
-  snippet: {title: string, thumbnails: {default: Thumbnail}}
+  snippet: {title: string, thumbnails: {high: Thumbnail}}
 }
