@@ -21,6 +21,7 @@ export default function SearchBar({ onTermChange }: SearchBarProps) {
           // setTerm(e.target.value);
           debounced(e.target.value);
         }}
+        placeholder='Search for a video...'
       />
     </div>
   );
