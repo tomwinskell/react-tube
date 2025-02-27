@@ -1,5 +1,5 @@
 'use client';
-// import { useState } from 'react';
+import { useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 
 type SearchBarProps = {
@@ -7,7 +7,7 @@ type SearchBarProps = {
 };
 
 export default function SearchBar({ onTermChange }: SearchBarProps) {
-  // const [term, setTerm] = useState('');
+  const [term, setTerm] = useState('');
 
   const debounced = useDebouncedCallback((value) => onTermChange(value), 500);
 
@@ -16,9 +16,9 @@ export default function SearchBar({ onTermChange }: SearchBarProps) {
       <input
         className="border rounded-md w-full text-xl p-2"
         type="text"
-        // value={term}
+        value={term}
         onChange={(e) => {
-          // setTerm(e.target.value);
+          setTerm(e.target.value);
           debounced(e.target.value);
         }}
         placeholder='Search for a video...'

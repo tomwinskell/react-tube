@@ -5,7 +5,7 @@ import axios from 'axios';
 import VideoList from './ui/videoList';
 import { VideoFromApi } from './definitions';
 import VideoDetail from './ui/videoDetail';
-// const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 import { VideoWithId } from './definitions';
 import { FaYoutube } from "react-icons/fa";
 
@@ -13,20 +13,20 @@ export default function Home() {
   const [videos, setVideos] = useState<VideoWithId[]>([]);
   const [video, setVideo] = useState<VideoWithId | undefined>(undefined);
 
-  async function handleSearch() {
-    // async function handleSearch(term: string): Promise<void> {
-    //   const url = 'https://www.googleapis.com/youtube/v3/search';
+  // async function handleSearch() {
+    async function handleSearch(term: string): Promise<void> {
+      const url = 'https://www.googleapis.com/youtube/v3/search';
 
-    //   const params = {
-    //     part: 'snippet',
-    //     key: API_KEY,
-    //     q: term,
-    //     type: 'video',
-    //   };
+      const params = {
+        part: 'snippet',
+        key: API_KEY,
+        q: term,
+        type: 'video',
+      };
 
     try {
-      const response = await axios.get('./data.json');
-      // axios.get(url, { params });
+      // const response = await axios.get('./data.json');
+      const response = await axios.get(url, { params });
       const videos = response.data.items.map((item: VideoFromApi) => {
         return {
           videoId: item.id.videoId,

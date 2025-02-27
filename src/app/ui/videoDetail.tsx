@@ -20,7 +20,7 @@ export default function VideoDetail({ video }: VideoDetailProps) {
       ) : (
         <>
           <div
-            className="w-full
+            className="w-full h-[240px]
             sm:h-[360px] lg:h-[540px] bg-slate-200 rounded-lg animate-pulse text-slate-500 flex items-center justify-center"
           >Search to load video...</div>
         </>
